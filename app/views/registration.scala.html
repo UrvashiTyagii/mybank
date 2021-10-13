@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="http://localhost:9000/assets/stylesheets/style.css">
+    <title>SignUp Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container">
+    <div >Registration Page</div>
+    <hr size="1" width="100%" color="black">
+    <div class="content">
+        <form action="/save/data" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="customerFirstname" name="customerFirstname" placeholder="Enter your First name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="customerLastname" name="customerLastname" placeholder="Enter your Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">DOB</span>
+                    <input type="text" id="dob" name="dob" placeholder="Enter your date of birth">
+                </div>
+                <div class="input-box">
+                    <span class="details">Adhar Number</span>
+                    <input type="text" id="aadharNumber" name="aadharNumber" placeholder="Enter your adhar number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+    <a href="/admin">Back</a>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="http//localhost:9000/assets/stylesheets/transactionhistory.css">
+  <meta charset="UTF-8">
+  <title>Transaction History</title>
+</head>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+<div class="container">
+  <div class="center">
+    <h3>Transaction History</h3>
+    <hr size="1" width="100%" color="black"><br>
+    <div class="search">
+      <form action="#">
+        <input type="text"
+               placeholder=" Search Date"
+               name="search">
+        <button>
+          Search
+        </button>
+      </form>
+
+    </div>
+  </div>
+  <br>
+  <table style="width:100%" id="transactionHistory">
+    <tr style="background-color:#FF1493;">
+      <th>Date</th>
+      <th>Time</th>
+      <th>Transfer Amount</th>
+
+    </tr>
+    <tr>
+      <td>02/11/2019</td>
+      <td>12:06</td>
+      <td>3000</td>
+
+    </tr>
+    <tr>
+      <td>11/08/2020</td>
+      <td>11:46</td>
+      <td>7700</td>
+
+    </tr>
+    <tr>
+      <td>19/12/2020</td>
+      <td>02:59</td>
+      <td>6000</td>
+
+    </tr>
+    <tr>
+      <td>24/03/2020</td>
+      <td>03:30</td>
+      <td>8000</td>
+    </tr>
+
+  </table>
+  <br>
+  <br>
+  <a href="/uhome">Back</a>
+</div>
+
+</body>
+</html>

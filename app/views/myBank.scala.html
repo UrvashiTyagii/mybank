@@ -1,0 +1,91 @@
+@()
+
+<html lang="en" xmlns:background="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="http://localhost:9000/assets/stylesheets/mybank.css">
+    <meta charset="UTF-8">
+    <title>My Bank</title>
+
+    <script type="text/javascript" src="http://localhost:9000/assets/javascripts/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+ <div style="text-align:center;">
+     <img src="http://localhost:9000/assets/images/bank.png" style="width:100px; height:100px;">
+     <h3>Welcome To MyBank!</h3>
+
+
+     <div class="container">
+
+         <div>Sign In</div>
+         <hr size="1" width="100%" color="black"><br>
+            <form action="/login/data" method="POST" >
+
+                 <label>UserId</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <input type="text" id="customerId" name="customerId" placeholder="Enter your Id" required><br><br>
+
+
+                <label>Password</label>
+                 <input type="password" id="customerPassword" name="customerPassword" placeholder="Enter your password" required><br><br>
+
+             <div class="button">
+                 <input type="submit" value="Log In">
+             </div>
+
+            </form>
+             <br>
+             <hr size="1" width="100%" color="black"><br>
+     </div>
+
+
+
+ </div>
+
+
+<script>
+function check_info()
+        {
+         var username=document.getElementById("username").value;
+         var password=document.getElementById("password").value;
+
+        alert(username+password);
+        }
+        function call()
+        {
+         var objAjax = new AJAX();
+         objAjax.GetJson("GET","Get Response","/responsee",getResponse,false);
+        }
+        function getResponse(responsee)
+        {
+          alert(responsee);
+        }
+        function check()
+        {
+          alert($("#username").val());
+        }
+
+        function myFunction() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    alert(this.responseText);
+    }
+  };
+  xhttp.open("GET", "/responsee", true);
+  xhttp.send();
+}
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
