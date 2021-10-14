@@ -47,7 +47,7 @@ be 1 and if customer's account is deactivated then statusId of customer will be 
    h) status -- it contains id, name(foe active and inactive) COLUMNS.<br>
 
 ## How To Execute
-1. Clone the project and save in saparate folder.<br>
+1. Clone the project and save in separate folder.<br>
 2. Create tables in workbench sql.<br>
 3. Import project in Intellij Idea.<br>
 4. Build the project using sbt.<br>
